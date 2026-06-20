@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agonía en el Océano: El Impacto Devastador en la Fauna Marina</title>
+    <style>
+        /* --- Configuración Base y Variables de Diseño --- */
+        :root {
+            --primary-alert: #e11d48; /* Rojo/coral para denotar urgencia e impacto */
+            --accent-dark: #0f172a;   /* Gris pizarra profundo */
+            --text-main: #1f2937;     /* Gris oscuro para lectura fluida */
+            --text-light: #4b5563;    /* Gris medio para descripciones secundarias */
+            --bg-page: #f8fafc;       /* Fondo de página ultra limpio */
+            --bg-card: #ffffff;       /* Fondo del contenedor */
+        }
+
+        body { 
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.8; 
+            color: var(--text-main); 
+            margin: 0; 
+            padding: 40px 20px; 
+            background-color: var(--bg-page); 
+            display: flex;
+            justify-content: center;
+        }
+
+        /* --- Contenedor Principal (Tarjeta Editorial) --- */
+        .artículo-container { 
+            max-width: 740px; 
+            background: var(--bg-card); 
+            border-radius: 16px; 
+            overflow: hidden;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 10px 15px -3px rgba(0, 0, 0, 0.03);
+            border: 1px solid #e2e8f0;
+        }
+
+        /* --- Imagen de Cabecera con Efecto --- */
+        .artículo-imagen {
+            width: 100%;
+            height: 380px;
+            object-fit: cover;
+            display: block;
+            filter: brightness(90%) contrast(105%);
+            transition: filter 0.4s ease;
+        }
+
+        .artículo-container:hover .artículo-imagen {
+            filter: brightness(100%) contrast(100%);
+        }
+
+        /* --- Bloque de Contenido --- */
+        .artículo-cuerpo {
+            padding: 50px 60px;
+        }
+
+        /* --- Enlace y Título Principal --- */
+        .artículo-titulo { 
+            font-size: 2.3rem;
+            font-weight: 800;
+            letter-spacing: -0.025em;
+            color: var(--accent-dark); 
+            margin-top: 0; 
+            margin-bottom: 30px;
+            line-height: 1.25;
+        }
+
+        .artículo-titulo a {
+            color: var(--accent-dark);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .artículo-titulo a:hover {
+            color: var(--primary-alert);
+        }
+
+        /* --- Párrafos con Estilo Editorial --- */
+        .artículo-parrafo { 
+            text-align: justify; 
+            color: var(--text-light);
+            margin-bottom: 24px;
+            font-size: 1.05rem;
+        }
+
+        /* Destacado sutil en el primer párrafo (Letra Capital) */
+        .primer-parrafo::first-letter {
+            font-size: 3.5rem;
+            font-weight: 900;
+            float: left;
+            margin-right: 12px;
+            line-height: 0.85;
+            color: var(--primary-alert);
+        }
+
+        /* --- Bloque de Alerta/Énfasis (Reemplaza el último bloque) --- */
+        .artículo-enfasis {
+            background-color: #fff1f2; /* Fondo rosa/rojo ultra suave */
+            border-left: 4px solid var(--primary-alert);
+            padding: 24px 30px;
+            margin-top: 35px;
+            border-radius: 0 12px 12px 0;
+            color: #9f1239; /* Texto rojo oscuro */
+            font-weight: 500;
+        }
+
+        /* --- Responsivo para Celulares --- */
+        @media (max-width: 640px) {
+            body { padding: 15px; }
+            .artículo-cuerpo { padding: 30px 20px; }
+            .artículo-imagen { height: 240px; }
+            .artículo-titulo { font-size: 1.75rem; }
+            .artículo-parrafo { font-size: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+<article class="artículo-container">
+    <img src="imagen/fauna-marina.jpg" alt="Daños a la fauna marina" class="artículo-imagen">
+    
+    <div class="artículo-cuerpo">
+        <h1 class="artículo-titulo">
+            <a href="#">Agonía en el Océano: El Impacto Devastador en la Fauna Marina</a>
+        </h1>
+        
+        <p class="artículo-parrafo primer-parrafo">
+            El verdadero rostro de la tragedia se escribe sobre los cuerpos de las criaturas que habitan el mar. Cuando ocurre un derrame, las especies marinas no tienen hacia dónde huir; el agua que les da vida se transforma instantáneamente en un veneno viscoso. Para las aves marinas y los mamíferos como las nutrias y los lobos de mar, el contacto directo con el crudo es una sentencia de muerte casi inmediata. El petróleo impregna sus plumas y pelaje, destruyendo por completo la capa aislante natural que los protege del frío. Sin esta barrera térmica, los animales caen víctimas de una dolorosa hipotermia o mueren ahogados al perder la flotabilidad, incapaces de sostenerse en la superficie.
+        </p>
+        
+        <p class="artículo-parrafo">
+            El horror continúa bajo la superficie. Los animales que logran sobrevivir al impacto inicial quedan atrapados en un ciclo de intoxicación letal. Al intentar limpiar desesperadamente sus cuerpos con el pico o la lengua, ingieren grandes cantidades de hidrocarburos, lo que les destroza el sistema digestivo, les causa hemorragias internas y destruye sus órganos vitales como el hígado y los riñones. Paralelamente, los peces absorben los compuestos químicos disueltos a través de sus branquias, sufriendo asfixia, ceguera permanente y mutaciones genéticas que anulan su capacidad para reproducirse.
+        </p>
+        
+        <div class="artículo-enfasis">
+            Desde los gigantescos cetáceos que respiran vapores tóxicos al salir a la superficie, hasta las delicadas tortugas marinas que confunden el petróleo con alimento, ninguna especie escapa ilesa. La contaminación destruye generaciones enteras de vida marina en cuestión de días, dejando playas cubiertas de cadáveres y un océano silencioso. Esta masacre ecológica no solo borra a los individuos del presente, sino que fractura el patrimonio genético y el futuro de la biodiversidad marina, demostrando que el petróleo extraído de la tierra se paga con la vida del océano.
+        </div>
+    </div>
+</article>
+
+</body>
+</html>

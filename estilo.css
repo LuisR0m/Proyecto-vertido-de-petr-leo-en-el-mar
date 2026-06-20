@@ -1,0 +1,450 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4em; 
+    background-color: #0b0f14; /* Fondo aún más oscuro para resaltar los contrastes */
+    color: #e2e8f0;
+}
+
+.contenedor {
+    width: 980px;
+    margin: 0 auto;
+}
+
+/*--- ENCABEZADO (Estilo Industrial Oscuro) ---*/
+.encabezado { 
+    background: #070a0e; 
+    overflow: hidden;
+    border-bottom: 3px solid #ff3333; /* Línea de alerta roja brillante */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+}
+
+.logo {
+    float: left;
+    position: relative;
+    top: 15px; 
+}
+
+.logo img {
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.05); /* Efecto zoom al logo */
+}
+
+.encabezado nav { 
+    float: right; 
+}
+
+.encabezado nav ul { 
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.encabezado nav ul li { 
+    display: inline-block;
+    margin-right: -4px;
+}
+
+.encabezado nav ul li a { 
+    display: block;
+    color: #94a3b8;
+    padding: 28px;
+    border-left: 1px solid #1e293b;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.encabezado nav ul li a:hover { 
+    background: #111827;
+    color: #ff3333;
+    text-shadow: 0 0 10px rgba(255, 51, 51, 0.6);
+}
+
+/*--- PRESENTACIÓN (Efecto Reflejo de Petróleo Animado) ---*/ 
+@keyframes oilSlick {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.presentacion {
+    /* Degradado iridiscente oscuro (simula petróleo en el agua) */
+    background: linear-gradient(-45deg, #050b14, #122538, #1a1126, #091a2b);
+    background-size: 400% 400%;
+    animation: oilSlick 12s ease infinite; /* Movimiento fluido del fondo */
+    overflow: hidden;
+    border-bottom: 5px solid #000; 
+    padding: 40px 0;
+}  
+
+.introduccion-presentacion {
+    float: left;
+    width: 50%;
+}
+
+.introduccion-presentacion h1 {
+    color: #fff;
+    font-size: 2.8em;  
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.2), 3px 3px 0px #000;
+    text-align: left;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    line-height: 1.2em; 
+} 
+
+.introduccion-presentacion h1 span {
+    color: #ff3333;
+    font-size: 0.45em; 
+    display: block;
+    letter-spacing: 4px;
+    text-shadow: 0 0 10px rgba(255, 51, 51, 0.8);
+    margin-top: 10px;
+}
+
+/*--- BOTÓN ALERTA PULSANTE ---*/
+@keyframes pulsoAlerta {
+    0% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7); }
+    70% { box-shadow: 0 0 0 15px rgba(239, 68, 68, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
+}
+
+a.aprender-mas {
+    font-size: 1.8em;
+    border: 2px solid #ef4444;
+    padding: 15px 30px;
+    display: inline-block;
+    text-align: center;
+    margin: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 2px 2px 2px #000;
+    border-radius: 50px; /* Bordes redondeados modernos */
+    background: linear-gradient(to right, #dc2626, #991b1b);
+    animation: pulsoAlerta 2s infinite; /* Llama la atención automáticamente */
+    transition: all 0.3s ease;
+} 
+
+a.aprender-mas:hover {
+    background: linear-gradient(to right, #ef4444, #dc2626);
+    transform: translateY(-3px);
+    box-shadow: 0 0 25px #ef4444;
+}
+
+.presentacion img {
+    float: right;
+    position: relative;
+    top: 10px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+}
+
+/*--- ACCESO RÁPIDO ---*/
+.acceso-rapido {
+    background: #0f172a;
+    overflow: hidden;
+    border-bottom: 4px solid #1e293b;
+    padding: 20px 0;
+}
+
+.acceso-rapido h2 {
+    color: #fff;
+    font-size: 2em;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    text-align: center;
+    border-bottom: 2px solid #ff3333;
+    padding-bottom: 16px;
+    display: inline-block;
+    margin: 0 auto 30px auto;
+    width: 100%;
+}
+
+.acceso-rapido ul {
+    margin: 0;
+    padding: 0;
+}
+
+.acceso-rapido figure {
+    display: inline-block;
+    text-align: center;
+    width: 25%;
+    margin: 0 -4px 0 0;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.acceso-rapido figure:hover {
+    transform: translateY(-8px); /* Tarjetas flotantes */
+}
+
+.acceso-rapido figure img {
+    border-radius: 6px;
+    border: 1px solid #334155;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+.acceso-rapido h3 {
+    font-size: 1.2em;
+    margin-top: 12px;
+}
+
+.acceso-rapido h3 a {
+    color: #cbd5e1;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.acceso-rapido h3 a:hover {
+    color: #ff3333;
+}
+
+/*--- BLOQUE CONTENIDO (Tarjetas de Noticias Impresionantes) ---*/
+.bloque-contenido {
+    overflow: hidden; 
+    margin-top: 40px; 
+}
+
+.bloque-contenido .contenedor {  
+    display: table;  
+}
+
+.articulos { 
+    background: #1e293b; /* Fondo oscuro interno para las noticias */
+    width: 65%; 
+    display: table-cell;  
+    padding: 25px;
+    border-radius: 8px 0 0 8px;
+}
+
+.articulos h2 {  
+    color: #fff;
+    font-size: 1.8em;
+    border-bottom: 2px solid #ff3333;
+    padding-bottom: 15px;
+    margin-top: 0;
+}
+
+.articulos article {  
+    margin-bottom: 30px;
+    padding: 15px;
+    background: #0f172a;
+    border-radius: 6px;
+    border-left: 4px solid #ef4444; /* Barra de acento destructivo lateral */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+.articulos img {  
+    float: left;
+    margin-right: 15px;
+    border-radius: 4px;
+    border: 1px solid #334155;
+}
+
+.articulos article h1 {  
+    font-size: 1.4em;  
+    margin: 5px 0 10px 0;  
+}
+
+.articulos article h1 a {  
+    color: #f1f5f9;  
+    text-decoration: none;
+}
+
+.articulos article h1 a:hover {  
+    color: #ef4444;
+}
+
+.articulos article p {  
+    margin: 0;
+    text-align: justify;
+    font-size: 0.9em; 
+    color: #94a3b8;
+}
+
+/*--- SIDEBAR COMPLEMENTARIO (Eventos Tóxicos) ---*/
+.complementario {    
+    background: #111827;
+    width: 35%; 
+    display: table-cell; 
+    padding: 25px; 
+    border-radius: 0 8px 8px 0;
+    vertical-align: top;
+    border-left: 2px solid #1e293b;
+}
+
+.complementario h2 {   
+    font-size: 1.6em;  
+    color: #ff3333;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 2px solid #1e293b;
+    padding-bottom: 15px;
+    margin-top: 0;
+    text-shadow: 0 0 8px rgba(255,51,51,0.4);
+}
+
+.complementario ul li { 
+    background: url("imagen/icon.png") no-repeat left center;
+    padding-left: 28px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #1e293b;
+    padding-bottom: 8px;
+}
+
+.complementario ul li a { 
+    color: #cbd5e1;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.complementario ul li a:hover { 
+    color: #fff;
+    padding-left: 5px; /* Efecto de desplazamiento al pasar el mouse */
+}
+
+/*--- FORMULARIO DE REGISTRO / SUSCRIPCIÓN ---*/
+.suscripcion {  
+    overflow: hidden;
+    background: linear-gradient(to right, #0f172a, #1e293b);   
+    margin-top: 40px;  
+    padding: 35px;
+    border-radius: 8px;
+    border: 1px solid #334155;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+.suscripcion h2 { 
+    float: left;
+    font-size: 1.8em; 
+    color: #fff;
+    margin: 0;
+    line-height: 45px;
+}
+
+.suscripcion form {  
+    float: right;
+}
+
+.suscripcion form input {   
+    border: 1px solid #475569;
+    padding: 12px;
+    background: #090d16;
+    color: #fff;
+    border-radius: 25px; /* Inputs modernos redondeados */
+    margin-left: 10px;
+    width: 220px;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.suscripcion form input:focus {
+    border-color: #ef4444;
+    box-shadow: 0 0 10px rgba(239, 68, 68, 0.5);
+}
+
+.suscripcion form input[type="submit"] { 
+    border: none;
+    padding: 12px 25px;
+    background: #ef4444;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    width: auto;
+    transition: background 0.3s;
+}
+
+.suscripcion form input[type="submit"]:hover { 
+    background: #dc2626;
+    box-shadow: 0 0 15px rgba(239, 68, 68, 0.6);
+}
+
+/*--- PIE DE PÁGINA ---*/
+.piedepagina {   
+    background: #070a0e;
+    padding: 30px 0; 
+    margin-top: 40px;
+    border-top: 1px solid #1e293b;
+}
+
+.piedepagina .contenedor {   
+    display: table;
+    width: 100%;
+}
+
+.piedepagina small {  
+    display: table-cell;
+    color: #64748b;  
+    vertical-align: middle;
+}
+
+.piedepagina nav { 
+    display: table-cell;
+    text-align: right; 
+    vertical-align: middle;
+}
+
+.piedepagina nav ul { 
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.piedepagina nav ul li { 
+    display: inline-block;
+    padding-left: 20px;  
+}
+
+.piedepagina nav ul li a { 
+    color: #64748b;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.piedepagina nav ul li a:hover { 
+    color: #ef4444;
+}
+
+/*--- REDES SOCIALES FLOTANTES ---*/
+.social {
+    position: fixed;
+    top: 35%;
+    right: 10px;
+    z-index: 1000;
+    background: rgba(15, 23, 42, 0.8);
+    padding: 10px;
+    border-radius: 30px;
+    border: 1px solid #334155;
+    backdrop-filter: blur(5px); /* Efecto cristal esmerilado detrás */
+}
+
+.social a {
+    display: block;
+    margin-bottom: 8px;
+    opacity: 0.8;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.social a:last-child {
+    margin-bottom: 0;
+}
+
+.social a:hover {
+    opacity: 1;
+    transform: scale(1.15);
+}
+
+.social img {
+    border-radius: 50%;
+    display: block;
+    width: 35px; /* Tamaño unificado */
+    height: 35px;
+}

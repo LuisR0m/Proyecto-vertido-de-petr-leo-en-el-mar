@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head> 
+    <meta charset="UTF-8">
+    <title>SOS Océanos - Contactanos</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        .form-grupo { margin-bottom: 20px; }
+        .form-grupo label { display: block; font-weight: bold; margin-bottom: 5px; color: #2c2c2c; }
+        .form-grupo input[type="text"], .form-grupo input[type="email"], .form-grupo select, .form-grupo textarea {
+            width: 100%; padding: 12px; border: 1px solid #ced4da; border-radius: 4px; font-family: inherit; font-size: 16px; outline: none;
+        }
+        .form-grupo input:focus, .form-grupo select:focus, .form-grupo textarea:focus { border-color: #0460ad; }
+    </style>
+</head>
+<body>
+ <header class="encabezado" role="banner">
+    <div class="contenedor">
+        <a href="index.html" class="logo">
+            <img src="imagen/animal5.jpg" alt="logotipo del sitio">
+        </a>
+        <nav role="navigation">
+            <ul>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="servicios.html">Servicio</a></li>
+                <li><a href="ubicacion.html">Ubicación</a></li>
+                <li><a href="contacto.html">Contactanos</a></li>
+            </ul>
+        </nav>
+    </div>
+ </header>
+
+ <div class="bloque-contenido">
+    <div class="contenedor">
+        <div class="articulos" style="width: 100%; padding: 40px; display: block;">
+            <h2>Contacto y Buzón Estudiantil</h2>
+            <p style="margin-bottom: 30px;">Si eres alumno, docente o investigador externo del Colegio de Bachilleres y estás interesado en participar en nuestras conferencias sobre desastres ecológicos marítimos, déjanos tus datos:</p>
+            
+            <form action="#" method="POST" style="background: #f8f9fa; padding: 30px; border-radius: 8px; border: 1px solid #e9ecef;">
+                <div class="form-grupo">
+                    <label for="nombre">Nombre Completo / Institución:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Prof. Alejandro Silva" required>
+                </div>
+
+                <div class="form-grupo">
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" required>
+                </div>
+
+                <div class="form-grupo">
+                    <label for="motivo">Motivo del Enlace:</label>
+                    <select id="motivo" name="motivo" required>
+                        <option value="">-- Elige una opción --</option>
+                        <option value="conferencia">Solicitar plática de vertido de petróleo en mi grupo</option>
+                        <option value="brigada">Deseo incorporarme a la Brigada SOS Océanos</option>
+                        <option value="proyecto">Colaboración en proyectos de ciencias o geografía</option>
+                        <option value="otro">Otras consultas estudiantiles</option>
+                    </select>
+                </div>
+
+                <div class="form-grupo">
+                    <label for="mensaje">Detalles de la solicitud:</label>
+                    <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribe tu mensaje especificando grupo y turno de adscripción dentro del Plantel 1..." required></textarea>
+                </div>
+
+                <div class="form-grupo" style="text-align: right; margin-top: 30px;">
+                    <input type="submit" value="Enviar Reporte" style="background: #0460ad; color: #fff; border: none; padding: 14px 40px; font-weight: bold; cursor: pointer; border-radius: 4px; font-size: 1em; text-shadow: 1px 1px 0 #000;">
+                </div>
+            </form>
+        </div>
+    </div>
+ </div>
+
+ <footer class="piedepagina" role="contentinfo">
+    <div class="contenedor">
+        <small>Copyright @ 2026 Vertido de Petróleo - Bachilleres Plantel 1</small>
+        <nav>
+            <ul>
+                <li><a href="#">Politicas del sitio</a></li>
+                <li><a href="#">Preguntas frecuentes</a></li>
+                <li><a href="contacto.html">Contactanos</a></li>
+            </ul>
+        </nav>
+    </div>
+ </footer>
+</body>
+</html>

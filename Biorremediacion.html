@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guerra Microscópica: La Biorremediación como Esperanza Biológica</title>
+    <style>
+        /* --- Configuración Base y Variables de Diseño --- */
+        :root {
+            --primary-science: #06b6d4; /* Color cian que evoca biotecnología y agua limpia */
+            --accent-dark: #0f172a;     /* Gris pizarra profundo */
+            --text-main: #1f2937;       /* Gris oscuro para lectura fluida */
+            --text-light: #4b5563;      /* Gris medio para descripciones secundarias */
+            --bg-page: #f8fafc;         /* Fondo de página ultra limpio */
+            --bg-card: #ffffff;         /* Fondo del contenedor */
+        }
+
+        body { 
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.8; 
+            color: var(--text-main); 
+            margin: 0; 
+            padding: 40px 20px; 
+            background-color: var(--bg-page); 
+            display: flex;
+            justify-content: center;
+        }
+
+        /* --- Contenedor Principal (Tarjeta Editorial) --- */
+        .artículo-container { 
+            max-width: 740px; 
+            background: var(--bg-card); 
+            border-radius: 16px; 
+            overflow: hidden;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 10px 15px -3px rgba(0, 0, 0, 0.03);
+            border: 1px solid #e2e8f0;
+        }
+
+        /* --- Imagen de Cabecera con Efecto --- */
+        .artículo-imagen {
+            width: 100%;
+            height: 380px;
+            object-fit: cover;
+            display: block;
+            filter: brightness(90%) contrast(105%);
+            transition: filter 0.4s ease;
+        }
+
+        .artículo-container:hover .artículo-imagen {
+            filter: brightness(100%) contrast(100%);
+        }
+
+        /* --- Bloque de Contenido --- */
+        .artículo-cuerpo {
+            padding: 50px 60px;
+        }
+
+        /* --- Enlace y Título Principal --- */
+        .artículo-titulo { 
+            font-size: 2.3rem;
+            font-weight: 800;
+            letter-spacing: -0.025em;
+            color: var(--accent-dark); 
+            margin-top: 0; 
+            margin-bottom: 30px;
+            line-height: 1.25;
+        }
+
+        .artículo-titulo a {
+            color: var(--accent-dark);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .artículo-titulo a:hover {
+            color: #0891b2; /* Tono cian oscuro al pasar el cursor */
+        }
+
+        /* --- Párrafos con Estilo Editorial --- */
+        .artículo-parrafo { 
+            text-align: justify; 
+            color: var(--text-light);
+            margin-bottom: 24px;
+            font-size: 1.05rem;
+        }
+
+        /* Destacado sutil en el primer párrafo (Letra Capital) */
+        .primer-parrafo::first-letter {
+            font-size: 3.5rem;
+            font-weight: 900;
+            float: left;
+            margin-right: 12px;
+            line-height: 0.85;
+            color: #0891b2;
+        }
+
+        /* --- Bloque de Cierre/Conclusión Estilizado --- */
+        .artículo-enfasis {
+            background-color: #ecfeff; /* Fondo cian/celeste ultra suave */
+            border-left: 4px solid var(--primary-science);
+            padding: 24px 30px;
+            margin-top: 35px;
+            border-radius: 0 12px 12px 0;
+            color: #155e75; /* Texto azul/cian oscuro */
+            font-weight: 500;
+        }
+
+        /* --- Responsivo para Celulares --- */
+        @media (max-width: 640px) {
+            body { padding: 15px; }
+            .artículo-cuerpo { padding: 30px 20px; }
+            .artículo-imagen { height: 240px; }
+            .artículo-titulo { font-size: 1.75rem; }
+            .artículo-parrafo { font-size: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+<article class="artículo-container">
+    <img src="imagen/biorremediacion.jpg" alt="Biorremediación" class="artículo-imagen">
+    
+    <div class="artículo-cuerpo">
+        <h1 class="artículo-titulo">
+            <a href="#">Guerra Microscópica: La Biorremediación como Esperanza Biológica</a>
+        </h1>
+        
+        <p class="artículo-parrafo primer-parrafo">
+            Frente a la devastation visible de las mareas negras, la ciencia ha encontrado una línea de defensa tan poderosa como invisible: la biorremediación. Cuando las barreras mecánicas fallan y los químicos tradicionales demuestran ser más tóxicos que el propio vertido, un ejército de microorganismos nativos —bacterias, hongos y algas especializadas— se convierte en la última resistencia del océano. Estos seres microscópicos poseen una capacidad evolutiva asombrosa: son capaces de utilizar los hidrocarburos complejos del petróleo como su principal fuente de energía y alimento, rompiendo las cadenas de carbono que asfixian el agua.
+        </p>
+        
+        <p class="artículo-parrafo">
+            El proceso funciona como una digestión a escala molecular. Al aplicar nutrientes específicos como fósforo y nitrógeno en las zonas afectadas, los científicos logran bioestimular y multiplicar exponencialmente las poblaciones de estas bacterias "comepetróleo". En lugar de dispersar el contaminante de manera superficial, estos microorganismos lo metabolizan desde adentro, transformando los compuestos químicos altamente cancerígenos y pesados en sustancias completamente inofensivas para el entorno, principalmente agua líquida y trazas mínimas de dióxido de carbono.
+        </p>
+        
+        <div class="artículo-enfasis">
+            Sin embargo, la biorremediación no es un milagro instantáneo; es una carrera de resistencia biológica que requiere tiempo, condiciones climáticas óptimas y un equilibrio estricto de oxígeno en el agua. Aunque representa una de las herramientas más limpias y prometedoras de la biotecnología ambiental moderna, los expertos adverten que no debe verse como una licencia para justificar la negligencia de la industria energética. La tecnología microscópica puede ayudar a sanar las heridas del océano, pero la verdadera solución sigue siendo evitar que el veneno toque el agua en primer lugar.
+        </div>
+    </div>
+</article>
+
+</body>
+</html>

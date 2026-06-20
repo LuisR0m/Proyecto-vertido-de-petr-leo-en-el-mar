@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Economías Quebradas: El Impacto Socioeconómico y el Colapso Pesquero</title>
+    <style>
+        /* --- Configuración Base y Variables de Diseño --- */
+        :root {
+            --primary-economy: #6366f1; /* Azul índigo que representa el comercio y la industria */
+            --accent-dark: #0f172a;     /* Gris pizarra profundo */
+            --text-main: #1f2937;       /* Gris oscuro para lectura fluida */
+            --text-light: #4b5563;      /* Gris medio para descripciones secundarias */
+            --bg-page: #f8fafc;         /* Fondo de página ultra limpio */
+            --bg-card: #ffffff;         /* Fondo del contenedor */
+        }
+
+        body { 
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.8; 
+            color: var(--text-main); 
+            margin: 0; 
+            padding: 40px 20px; 
+            background-color: var(--bg-page); 
+            display: flex;
+            justify-content: center;
+        }
+
+        /* --- Contenedor Principal (Tarjeta Editorial) --- */
+        .artículo-container { 
+            max-width: 740px; 
+            background: var(--bg-card); 
+            border-radius: 16px; 
+            overflow: hidden;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 10px 15px -3px rgba(0, 0, 0, 0.03);
+            border: 1px solid #e2e8f0;
+        }
+
+        /* --- Imagen de Cabecera con Efecto --- */
+        .artículo-imagen {
+            width: 100%;
+            height: 380px;
+            object-fit: cover;
+            display: block;
+            filter: brightness(90%) contrast(105%);
+            transition: filter 0.4s ease;
+        }
+
+        .artículo-container:hover .artículo-imagen {
+            filter: brightness(100%) contrast(100%);
+        }
+
+        /* --- Bloque de Contenido --- */
+        .artículo-cuerpo {
+            padding: 50px 60px;
+        }
+
+        /* --- Enlace y Título Principal --- */
+        .artículo-titulo { 
+            font-size: 2.3rem;
+            font-weight: 800;
+            letter-spacing: -0.025em;
+            color: var(--accent-dark); 
+            margin-top: 0; 
+            margin-bottom: 30px;
+            line-height: 1.25;
+        }
+
+        .artículo-titulo a {
+            color: var(--accent-dark);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .artículo-titulo a:hover {
+            color: var(--primary-economy); /* Tono índigo al pasar el cursor */
+        }
+
+        /* --- Párrafos con Estilo Editorial --- */
+        .artículo-parrafo { 
+            text-align: justify; 
+            color: var(--text-light);
+            margin-bottom: 24px;
+            font-size: 1.05rem;
+        }
+
+        /* Destacado sutil en el primer párrafo (Letra Capital) */
+        .primer-parrafo::first-letter {
+            font-size: 3.5rem;
+            font-weight: 900;
+            float: left;
+            margin-right: 12px;
+            line-height: 0.85;
+            color: var(--primary-economy);
+        }
+
+        /* --- Bloque de Cierre/Conclusión Estilizado --- */
+        .artículo-enfasis {
+            background-color: #f5f3ff; /* Fondo índigo/púrpura ultra suave */
+            border-left: 4px solid var(--primary-economy);
+            padding: 24px 30px;
+            margin-top: 35px;
+            border-radius: 0 12px 12px 0;
+            color: #4338ca; /* Texto índigo oscuro */
+            font-weight: 500;
+        }
+
+        /* --- Responsivo para Celulares --- */
+        @media (max-width: 640px) {
+            body { padding: 15px; }
+            .artículo-cuerpo { padding: 30px 20px; }
+            .artículo-imagen { height: 240px; }
+            .artículo-titulo { font-size: 1.75rem; }
+            .artículo-parrafo { font-size: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+<article class="artículo-container">
+    <img src="imagen/pesca.jpg" alt="Impacto Socioeconómico" class="artículo-imagen">
+    
+    <div class="artículo-cuerpo">
+        <h1 class="artículo-titulo">
+            <a href="#">Economías Quebradas: El Impacto Socioeconómico y el Colapso Pesquero</a>
+        </h1>
+        
+        <p class="artículo-parrafo primer-parrafo">
+            Detrás del desastre ecológico se esconde una crisis humana devastadora que destruye el sustento de comunidades enteras de la noche a la mañana. Cuando el petróleo invade las aguas, la economía local colapsa en un efecto dominó incontrolable. El sector pesquero y de acuicultura es la primera víctima directa: las autoridades se ven obligadas a decretar el cierre inmediato de las zonas de captura para evitar que mariscos y peces contaminados con toxinas cancerígenas lleguen al plato de los consumidores. Para miles de pescadores artesanales y mariscadores, esto significa la pérdida instantánea de su único ingreso, transformando la abundancia del mar en deudas, desempleo y desesperación.
+        </p>
+        
+        <p class="artículo-parrafo">
+            Las pérdidas financieras son monumentales y se extienden mucho más allá de las redes de pesca. Las embarcaciones, los muelles y las costosas herramientas de trabajo quedan inservibles, impregnados de un alquitrán pegajoso cuyo costo de limpieza o reemplazo es astronómico. Paralelamente, el mercado sufre una crisis de desconfianza severa; la reputación de los productos marinos de la región queda manchada durante años, provocando que los compradores huyan hacia otros proveedores, incluso mucho después de que las restricciones sanitarias oficiales hayan sido levantadas por completo.
+        </p>
+        
+        <div class="artículo-enfasis">
+            Por otra parte, la industria del turismo costero —el otro gran motor económico de estas regiones— se extingue por completo. Playas paradisíacas que antes atraían a miles de visitantes se convierten en escenarios de emergencia cubiertos de lodo negro y vapores químicos asfixiantes. Los hoteles, restaurantes, comercios locales y operadores turísticos se quedan vacíos, enfrentando la quiebra masiva. Las indemnizaciones por parte de las corporaciones responsables suelen tardar años en llegar tras complejos procesos legales, dejando a las poblaciones costeras desamparadas y demostrando que la marea negra no solo envenena la biodiversidad, sino que devora el tejido social y el futuro financiero de las regiones afectadas.
+        </div>
+    </div>
+</article>
+
+</body>
+</html>
